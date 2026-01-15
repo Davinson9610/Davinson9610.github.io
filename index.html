@@ -3,66 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Davifit – Tienda Online</title>
+<title>Davifit - Tienda Online</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #0a0a0a;
+    color: white;
 }
 
 header {
-    background-color: #0a1f44;
-    color: white;
+    background-color: black;
     padding: 20px;
     text-align: center;
-}
-
-.logo-fondo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.1;
-    width: 60%;
-    z-index: -1;
+    border-bottom: 3px solid gold;
 }
 
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 10px;
-    background-color: #102a5c;
+    margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: gold;
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero {
-    background-color: rgba(13, 47, 102, 0.9);
-    color: white;
-    padding: 60px 20px;
+    background: linear-gradient(to bottom, #111, #000);
+    padding: 80px 20px;
     text-align: center;
 }
 
 .hero h1 {
-    margin: 0;
-    font-size: 36px;
+    color: gold;
+    font-size: 40px;
 }
 
 .btn {
-    background-color: #00c3ff;
+    background-color: gold;
     color: black;
     padding: 12px 25px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .section {
@@ -78,24 +68,39 @@ nav a {
 }
 
 .product {
-    background-color: white;
+    background-color: #111;
+    border: 2px solid gold;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #0a1f44;
-    color: white;
+    background-color: black;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
+    border-top: 3px solid gold;
 }
 
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;
+    background-color: #25D366;
     color: white;
     padding: 15px;
     border-radius: 50%;
@@ -108,49 +113,84 @@ footer {
 
 <body>
 
-<img src="logo.png" class="logo-fondo">
-
 <header>
-    <h2>DAVIFIT</h2>
-</header>
+    <h2 style="color:gold">DAVIFIT</h2>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
 <section class="hero" id="inicio">
     <h1>Bienvenido a Davifit</h1>
-    <p>Tecnología, ropa y accesorios recomendados</p>
+    <p>Tu tienda online de tecnología, ropa y accesorios</p>
     <button class="btn">Ver Productos</button>
 </section>
 
+<section class="section" id="categorias">
+    <h2 style="color:gold">Categorías</h2>
+
+    <div class="categories">
+        <div class="category">Tecnología</div>
+        <div class="category">Ropa</div>
+        <div class="category">Accesorios</div>
+        <div class="category">Ofertas</div>
+        <div class="category">Clickbank</div>
+    </div>
+</section>
+
 <section class="section" id="productos">
-    <h2>Nuestros Productos</h2>
+    <h2 style="color:gold">Productos Destacados</h2>
 
     <div class="products">
 
         <div class="product">
-            <h3>Producto de Ejemplo</h3>
-            <p>Aquí irá tu producto con enlace de ClickBank</p>
-            <a href="TU_LINK_DE_CLICKBANK_AQUI" class="btn">Comprar</a>
+            <h3>Producto 1</h3>
+            <p>Descripción del producto</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="product">
+            <h3>Producto 2</h3>
+            <p>Descripción del producto</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="product">
+            <h3>Producto 3</h3>
+            <p>Descripción del producto</p>
+            <button class="btn">Comprar</button>
+        </div>
+
+        <div class="product">
+            <h3>Producto 4</h3>
+            <p>Descripción del producto</p>
+            <button class="btn">Comprar</button>
         </div>
 
     </div>
 </section>
 
+<section class="section">
+    <h2 style="color:gold">Productos Recomendados de Clickbank</h2>
+    <p>Aquí aparecerán productos afiliados recomendados</p>
+</section>
+
 <section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p>Correo: castrodavinson51@gmail.com</p>
+    <h2 style="color:gold">Contacto</h2>
     <p>WhatsApp: 9083576104</p>
+    <p>Email: castrodavinson51@gmail.com</p>
 </section>
 
 <footer>
-    <p>© 2025 Davifit – Todos los derechos reservados</p>
+    <p>© 2025 Davifit - Todos los derechos reservados</p>
+    <p>Tienda online de productos tecnológicos, ropa y accesorios</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/9083576104" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/9083576104" target="_blank">W</a>
 
 </body>
 </html>
