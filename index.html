@@ -19,6 +19,16 @@ header {
     text-align: center;
 }
 
+.logo-fondo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    width: 60%;
+    z-index: -1;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -34,7 +44,7 @@ nav a {
 }
 
 .hero {
-    background-color: #0d2f66;
+    background-color: rgba(13, 47, 102, 0.9);
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -43,10 +53,6 @@ nav a {
 .hero h1 {
     margin: 0;
     font-size: 36px;
-}
-
-.hero p {
-    font-size: 18px;
 }
 
 .btn {
@@ -102,6 +108,8 @@ footer {
 
 <body>
 
+<img src="logo.png" class="logo-fondo">
+
 <header>
     <h2>DAVIFIT</h2>
 </header>
@@ -114,7 +122,7 @@ footer {
 
 <section class="hero" id="inicio">
     <h1>Bienvenido a Davifit</h1>
-    <p>La mejor tienda online de tecnología, ropa y accesorios</p>
+    <p>Tecnología, ropa y accesorios recomendados</p>
     <button class="btn">Ver Productos</button>
 </section>
 
@@ -124,23 +132,9 @@ footer {
     <div class="products">
 
         <div class="product">
-            <h3>Tecnología</h3>
-            <p>Los mejores gadgets y electrónicos</p>
-        </div>
-
-        <div class="product">
-            <h3>Ropa</h3>
-            <p>Moda y estilo para ti</p>
-        </div>
-
-        <div class="product">
-            <h3>Accesorios</h3>
-            <p>Complementos ideales</p>
-        </div>
-
-        <div class="product">
-            <h3>Productos ClickBank</h3>
-            <p>Productos recomendados afiliados</p>
+            <h3>Producto de Ejemplo</h3>
+            <p>Aquí irá tu producto con enlace de ClickBank</p>
+            <a href="TU_LINK_DE_CLICKBANK_AQUI" class="btn">Comprar</a>
         </div>
 
     </div>
